@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".RegisterProject1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/Main_Blue"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Register Project"
+                android:textColor="@color/Main_Blue"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="@color/Secondary_Grey"
+                android:text="2/2"/>
+
+            <Spinner
+                android:id="@+id/proj_name_spinner"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:paddingVertical="15sp"
+                android:paddingHorizontal="9sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/proj_jobdesc_layout"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/proj_jobdesc_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jobdesc" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/proj_btn_register"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70sp"
+                android:fontFamily="@font/nunito_bold"
+                android:background="@drawable/bg_tombol"
+                android:textColor="@color/Pure_White"
+                android:text="Add User"/>
+
+            <Button
+                android:id="@+id/proj_btn_selesai"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/nunito_bold"
+                android:background="@drawable/bg_tombol"
+                android:textColor="@color/Pure_White"
+                android:text="Selesai"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
